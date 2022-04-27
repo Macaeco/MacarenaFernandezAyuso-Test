@@ -1,0 +1,41 @@
+.col{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(180, 177, 177);
+
+}
+.mb-3{
+    width: 25rem;
+}
+.form__main{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+    
+}
+.form-label{
+    padding-left: 0.5rem;
+}
+.form-control{
+    height: 1.75rem;
+    border: solid 2px;
+    
+}
+.text__area{
+    height: 3rem;
+}
+.placeholder__text{
+    font-size: small;
+    color: rgb(59, 59, 59);
+}
+.card__container{
+    margin-left: 6rem;
+    margin-top: 7rem;
+    border-radius: 4%;
+    border-color: black;
+    
+}
+.input__description{
+    height: 4rem;
+}
