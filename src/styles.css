@@ -1,0 +1,22 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+app-footer{
+   
+    margin-top: auto;
+}
+
+@font-face {
+    font-family:font-project ;
+    src: url("./assets/secrcode.ttf");
+  }
+
+*{
+    font-family: fron-project;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

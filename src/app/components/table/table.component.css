@@ -1,0 +1,15 @@
+.table__container{
+    width: 50rem;
+    border: solid 5px;
+    border-color: black;
+    border-radius: 5%;
+    margin-top: 1rem;
+    
+}
+.img__excel{
+    width: 20px;
+}
+.excel__button{
+    /* margin-top: 4rem;
+    margin-left: 36rem; */
+}
