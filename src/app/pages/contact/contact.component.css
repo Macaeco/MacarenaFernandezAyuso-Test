@@ -5,20 +5,20 @@
 
 }
 .mb-3{
-    width: 25rem;
+    width: 50vh;
 }
 .form__main{
-    margin-left: 5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-left: 10vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
     
     
 }
 .form-label{
-    padding-left: 0.5rem;
+    padding-left: 1vh;
 }
 .form-control{
-    height: 1.75rem;
+    height: 4.5vh;
     border: solid 2px;
     
 }
@@ -37,5 +37,8 @@
     
 }
 .input__description{
-    height: 4rem;
+    height: 9vh;
+}
+*{
+    font-family: fontProject;
 }

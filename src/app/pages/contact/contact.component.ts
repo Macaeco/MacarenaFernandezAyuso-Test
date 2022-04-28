@@ -21,17 +21,16 @@ export class ContactComponent implements OnInit {
   public dispCard = false
 
 
-  example: Perfil[] =[
+  example: Perfil[] = [
     {
-    name: 'Example',
-    surname: 'Example',
-    age: 20,
-    phone: 111111111,
-    email: ' example@example.example',
-    description: 'example',
+      name: 'Example',
+      surname: 'Example',
+      age: 20,
+      phone: 111111111,
+      email: ' example@example.example',
+      description: 'example',
     }
   ]
-
   nuevo: Perfil = {
     name: ' ',
     surname: ' ',
@@ -42,31 +41,25 @@ export class ContactComponent implements OnInit {
 
   }
 
-
-  printCard(){
-    this.dispCard= true
+  printCard() {
+    this.dispCard = true
   }
-
-
   addData() {
     if (this.nuevo.name.trim().length === 0) {
       return;
     }
     console.log(this.nuevo)
-    localStorage.setItem('user',`${JSON.stringify(this.nuevo)} `)
-
+    localStorage.setItem('user', `${JSON.stringify(this.nuevo)} `)
     
-      
-
     // this.example.push(this.nuevo);
-    this.example=[(this.nuevo)];
+    this.example = [(this.nuevo)];
     this.nuevo = {
-    name: ' ',
-    surname: ' ',
-    age: 0,
-    phone: 0,
-    email: ' ',
-    description: ' '
+      name: ' ',
+      surname: ' ',
+      age: 0,
+      phone: 0,
+      email: ' ',
+      description: ' '
     }
   }
 

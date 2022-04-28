@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableExporterModule} from 'mat-table-exporter';
+import {MatExpansionModule} from '@angular/material/expansion'
 
 
 
@@ -33,7 +34,8 @@ import {MatTableExporterModule} from 'mat-table-exporter';
     BrowserAnimationsModule,
     MatTableModule,
     MatButtonModule,
-    MatTableExporterModule
+    MatTableExporterModule,
+    MatExpansionModule
 
   ],
   providers: [ApiService],

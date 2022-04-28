@@ -9,19 +9,15 @@ import { User } from '../../interfaces/users.types';
 })
 export class HomeComponent implements OnInit {
 
-  
-  // constructor() { 
-  // }
   public users: User[] = [];
-  
-  constructor(private api: ApiService) { 
-      this.api.apiCall().subscribe(data=> {
-        this.users = data;
-        console.log(data)
-      })
-     
-  }
 
+  constructor(private api: ApiService) {
+    this.api.apiCall().subscribe(data => {
+      this.users = data;
+      console.log(data)
+    })
+
+  }
   ngOnInit(): void {
   }
 

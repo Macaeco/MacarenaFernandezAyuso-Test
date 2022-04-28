@@ -8,15 +8,27 @@ app-footer{
     margin-top: auto;
 }
 
+
 @font-face {
     font-family:font-project ;
-    src: url("./assets/secrcode.ttf");
-  }
+    src: url("./assets/prueba1.ttf");
+}
+@font-face {
+    font-family:fontProject ;
+    src: url("./assets/prueba3.ttf");
+}
+@font-face {
+    font-family:fontProjectD ;
+    src: url("./assets/prueba4.ttf");
+}
+
+
 
 *{
-    font-family: fron-project;
+    font-family: frontProject;
+
 }
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: fontProject; }

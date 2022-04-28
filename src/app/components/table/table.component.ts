@@ -13,21 +13,23 @@ import * as XLSX from 'xlsx';
 
 
 export class TableComponent implements OnInit {
-  fileName= 'ExcelSheet.xlsx';
+  fileName = 'ExcelSheet.xlsx';
 
   exportExcel(): void {
-   
+
     let element = document.getElementById('excel-table');
-    const ws: XLSX.WorkSheet =XLSX.utils.table_to_sheet(element);
- 
-   
+    const ws: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
+
+
     const wb: XLSX.WorkBook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
- 
-    
+
+
     XLSX.writeFile(wb, this.fileName);
- 
+
   }
+
+  // EXPLAINED IN README REFERENCE #3
 
 
   public users: User[] = [];
@@ -35,18 +37,18 @@ export class TableComponent implements OnInit {
   public even: User[] = [];
   public odd: User[] = [];
 
-  selectUser1(){
+  selectUser1() {
 
     this.users = this.allUsers
 
   }
-  selectUser2(){
+  selectUser2() {
 
     this.users = this.even
 
   }
-  selectUser3(){
-    this.users=this.odd
+  selectUser3() {
+    this.users = this.odd
 
   }
 
@@ -64,12 +66,8 @@ export class TableComponent implements OnInit {
         }
       })
 
-
       console.log(this.even)
     })
-
-
-
   }
 
 

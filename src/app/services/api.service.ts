@@ -15,7 +15,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) {
 
-
   }
   public apiCall(): Observable<User[]> {
     return this.http.get<User[]>(this._servidorHttp);

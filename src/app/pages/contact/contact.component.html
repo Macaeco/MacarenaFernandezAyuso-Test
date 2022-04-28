@@ -1,18 +1,14 @@
 <div class="col container__contact">
 
-    <form class="form__main" (ngSubmit)="addData()" novalidate  #f="ngForm">
-
+    <form class="form__main" (ngSubmit)="addData()" novalidate #f="ngForm">
 
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Name</label>
 
-
-            <input  required type="text" class="form-control" id="exampleInputName" name="name" [(ngModel)]="nuevo.name" ngModel>
-
+            <input required type="text" class="form-control" id="exampleInputName" name="name" [(ngModel)]="nuevo.name"
+                ngModel>
 
         </div>
-
-
 
         <div class="mb-3">
             <label for="exampleInputSurName" class="form-label">Surname</label>
@@ -30,14 +26,15 @@
             <input required type="number" placeholder="You must be over 16 and under 55 years of age. "
                 id="exampleInputEmail1" class="form-control placeholder__text" min="16" max="55" id="exampleInputAge"
                 name="age" [(ngModel)]="nuevo.age" ngModel>
+
         </div>
 
 
         <div class="mb-3">
             <label for="exampleInpuMobile" class="form-label">Mobile number </label>
 
-            <input required type="tel" maxlength="9" minlength="9" class="form-control" id="exampleInputMobile" name="phone"
-                [(ngModel)]="nuevo.phone" ngModel>
+            <input required type="tel" maxlength="9" minlength="9" class="form-control" id="exampleInputMobile"
+                name="phone" [(ngModel)]="nuevo.phone" ngModel>
 
         </div>
 
@@ -56,25 +53,22 @@
 
 
         <div class="mb-3">
-
-
             <label for="exampleInpuMobile" class="form-label">Description</label>
 
-            <input type="text" class="form-control input__description" id="exampleInputDescription"  placeholder ="Description" name="description"
-                [(ngModel)]="nuevo.description" ngModel>
+            <input type="text" class="form-control input__description" id="exampleInputDescription"
+                placeholder="Description" name="description" [(ngModel)]="nuevo.description" ngModel>
 
         </div>
 
 
         <button type="submit" class="btn btn-dark" [disabled]="f.invalid" (click)="printCard()">Ready!</button>
-         <span class="badge bg-secondary text-dark ms-4">Make sure you have filled in all required fields before submitting your form.</span>
+        <span class="badge bg-secondary text-dark ms-4">Make sure you have filled in all required fields before
+            submitting your form.</span>
 
     </form>
-    <div  [style.display]="dispCard === false ?'none': 'block' ">
-
-        
+    
+    <div [style.display]="dispCard === false ?'none': 'block' ">
         <app-card [example]="example"></app-card>
-
     </div>
 
 
