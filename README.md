@@ -1,5 +1,5 @@
 
-## *Macarena SOtomayor Fernandez-Ayuso*
+## *Macarena Sotomayor Fernandez-Ayuso*
 
 # **TECHNICAL TEST**
 
