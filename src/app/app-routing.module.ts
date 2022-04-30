@@ -6,11 +6,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 const routes: Routes = [
 
   {
-    path:'/home',
+    path:'home',
     component: HomeComponent
   },
   {
-    path:'/MacarenaFernandezAyuso-Test/contact',
+    path:'contact',
     component: ContactComponent
   },
   {
